@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Piedra papel o tijera</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <button class="toggle-mode">
+      </button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <section class="mainPage" id="mainPage">
+      <div class="halfOne">
+        <button class="fade-in actionBtn" id="start" type="button">PLAY</button>
+      </div>
+      <div class="halfTwo">
+        <h1 class="fade-in">Rock, Paper & Scissors <br> with JavaScript
+          <span class="jsImg">
+            <img src="javascript.svg" alt="JavaScript Logo">
+          </span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="playPage">
+      <div class="scores">
+        <h2>PLAYER SCORE: <span id="p1Score">0</span> </h2>
+        <h2 class="countDown">0</h2>
+        <h2>COMPUTER SCORE: <span id="p2Score">0</span> </h2>
+      </div>
+      <div class="players">
+        <img class="player fade-in" src="public/optionsToPlay/paper.svg" alt="">
+        <h2 class="vsCenter animate__animated animate__fadeIn">VS</h2>
+        <img class="computer fade-in" src="public/optionsToPlay/paper.svg" alt="">
+      </div>
+      <div class="options">
+        <button class="btnOption actionBtn fade-in" id="rock">ROCK</button>
+        <button class="btnOption actionBtn fade-in" id="paper">PAPER</button>
+        <button class="btnOption actionBtn fade-in" id="scissors">SCISSORS</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</body>
+|
+
+</html>
